@@ -12,7 +12,7 @@ define(files, function() {
   
   return function Cookbook(editor, repl) {
 
-    lessons = files.map((e, i) => [e, arguments[i]]});
+    lessons = files.map((e, i) => [e, arguments[i]]);
     
     lessons.forEach(function(lesson) {
       addExample(lesson[0], lesson[1]);
