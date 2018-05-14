@@ -4,12 +4,13 @@
 path = "../lessons/"
 
 // Lessons to be added
-var lessons = [["Data Types 1", "//This lesson is empty right now"]];
+//var lessons = [["Data Types 1", "//This lesson is empty right now"]];
+var lessons = ["Data Types 1", "Data Types 2"];
 
 // The content of each lesson is obtained
-//lessons.forEach(function(lesson, index, array) {
-//  array[index] = [lesson, require(path+lesson)]
-//});
+lessons.forEach(function(lesson, index, array) {
+  array[index] = [lesson, require(path+lesson)]
+});
 
 define([], function() {
   return function Cookbook(editor, repl) {
