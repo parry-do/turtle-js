@@ -1,15 +1,22 @@
 "use strict";
+
+// Path leading to the lesson files
+path = "../lessons/"
+
+// Lessons to be added
+lessons = ["Data Types 1", "Data Types 2",]
+
+// The content of each lesson is obtained
+lessons.forEach(function(lesson, index, array) {
+  array[index] = [lesson, require(path+lesson)]
+});
+
 define([], function() {
   return function Cookbook(editor, repl) {
-    path = "../lessons/"
-    
-    lessons = ["Data Types 1", "Data Types 2",]
-    
+
     lessons.forEach(function(lesson) {
-      content = require(path + lesson)
-      var element = $("<li>").attr("data-code", content).text(lesson)
-      $("#cookbook ul").append(element)
-    })
+      addExample(lesson[0], lesson[1]);
+    });
     
     //var square = "function square() {\n  for (var i=1; i <= 4; i++) {\n    fd(50)\n    lt(90)\n  }\n}"
     //addExample("Turtle moves", "fd(50)\nlt(45)\nfd(50)\nrt(45)\nfd(50)")
