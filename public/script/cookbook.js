@@ -10,10 +10,9 @@ var files = ["Data Types 1.txt",
 
 define(files, function() {
   
+  var lessons = files.map((e, i) => [e, arguments[i]]);
+  
   return function Cookbook(editor, repl) {
-
-    lessons = files.map((e, i) => [e, arguments[i]]);
-    
     lessons.forEach(function(lesson) {
       addExample(lesson[0], lesson[1]);
     })
