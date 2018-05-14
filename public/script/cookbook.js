@@ -18,7 +18,7 @@ define([], function() {
     //  addExample(lesson[0], lesson[1]);
     //});
     
-    lessons = [['Data Types 1", "//This lesson is empty right now"]];
+    lessons = [["Data Types 1", "//This lesson is empty right now"]];
     
     var square = "function square() {\n  for (var i=1; i <= 4; i++) {\n    fd(50)\n    lt(90)\n  }\n}"
     addExample("Turtle moves", "fd(50)\nlt(45)\nfd(50)\nrt(45)\nfd(50)")
