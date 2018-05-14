@@ -7,22 +7,25 @@ path = "../lessons/"
 lessons = ["Data Types 1", "Data Types 2",]
 
 // The content of each lesson is obtained
-lessons.forEach(function(lesson, index, array) {
-  array[index] = [lesson, require(path+lesson)]
-});
+//lessons.forEach(function(lesson, index, array) {
+//  array[index] = [lesson, require(path+lesson)]
+//});
 
 define([], function() {
   return function Cookbook(editor, repl) {
 
-    lessons.forEach(function(lesson) {
-      addExample(lesson[0], lesson[1]);
-    });
+    //lessons.forEach(function(lesson) {
+    //  addExample(lesson[0], lesson[1]);
+    //});
     
-    //var square = "function square() {\n  for (var i=1; i <= 4; i++) {\n    fd(50)\n    lt(90)\n  }\n}"
-    //addExample("Turtle moves", "fd(50)\nlt(45)\nfd(50)\nrt(45)\nfd(50)")
-    //addExample("Square", square + "\nsquare()")
-    //addExample("Spiral", "clear()\ni = 1\nwhile (i < 300) {\n  fd(i*1)\n  lt(i*1)\n  i++\n}")
-    //addExample("Clear", "clear()")
+    lessons = [['Data Types 1", "//This lesson is empty right now"]];
+    
+    var square = "function square() {\n  for (var i=1; i <= 4; i++) {\n    fd(50)\n    lt(90)\n  }\n}"
+    addExample("Turtle moves", "fd(50)\nlt(45)\nfd(50)\nrt(45)\nfd(50)")
+    addExample(lessons[0], lessons[1])
+    addExample("Square", square + "\nsquare()")
+    addExample("Spiral", "clear()\ni = 1\nwhile (i < 300) {\n  fd(i*1)\n  lt(i*1)\n  i++\n}")
+    addExample("Clear", "clear()")
 
     $("#cookbook label").click(function() {
       $("#cookbook ul").slideToggle("fast")
