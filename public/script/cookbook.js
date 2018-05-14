@@ -1,7 +1,7 @@
 "use strict";
 
 // Path leading to the lesson files
-path = "text!../lessons/";
+path = "text!./../lessons/";
 
 // Lessons to be added
 //var lessons = [["Data Types 1", "//This lesson is empty right now"]];
