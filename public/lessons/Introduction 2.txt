@@ -1,10 +1,9 @@
 // This will make the Turtle go forward then turn 90 degrees to the right twice
-fd(50)
+fd(20)
 rt(90)
 // clear() // This line can reset the Turtle
-fd(50)
+fd(20)
 rt(90)
 // Press run twice to draw a square.
 // Remove the ‘//’ from the fourth line above. The clear() command resets the Turtle.
 // Now the Turtle will draw a line, turn, be reset, draw a line and turn right. Press run twice.
-
