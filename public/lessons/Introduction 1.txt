@@ -1,0 +1,6 @@
+// A line that starts with ‘//’ is a “comment", ignored by the computer.
+// The triangle above is the Turtle. The next line makes it go forward by 50 when you press ‘run’. Press run now.
+fd(50)
+// Change the ‘50’ above to another number and press ‘run’ again
+// Click ‘Lessons’ to go to the next example
+
