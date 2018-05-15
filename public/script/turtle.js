@@ -103,7 +103,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
       },
       fd: function(dist) {
         if (typeof dist !== "number") {
-          alert("Found error in turtle, attempting to raise")
+          alert("Found error in turtle, attempting to raise. editor is: " + editor)
           editor.error("Turtle only moves by Numbers!")
         }
         Smoothly.step(dist, 5, function(step) {
