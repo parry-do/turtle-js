@@ -6,7 +6,6 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
     function setSize(width, height) {
       w = width
       h = height
-      editor = editor
       element.css({position: "relative", width: w, height: h})
       element.find("canvas").attr("width", w).attr("height", h)
     }
