@@ -103,7 +103,6 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
       },
       fd: function(dist) {
         if (typeof dist !== "number") {
-          alert("Found error in turtle, attempting to raise. editor is: " + editor)
           editor.error("Turtle only moves by Numbers!")
         }
         Smoothly.step(dist, 5, function(step) {
@@ -126,7 +125,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         this.rt(-angle)
       },
       rt: function(angle) {
-        if (typeof dist !== "number") {editor.error("Turtle only rotates by Numbers!")}
+        if (typeof angle !== "number") {editor.error("Turtle only rotates by Numbers!")}
         Smoothly.step(angle, 10, function(a) {
           clearTurtle()
           paper.rotate(a * Math.PI / 180)
