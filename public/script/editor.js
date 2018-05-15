@@ -45,6 +45,7 @@ define(["bacon.jquery", "parsestack"], function(bjq, parseStack) {
         codeMirror.setValue(value)
       },
       error: function(message) {
+        alert("Attempting to raise external error: " + message)
         showError(message)
       }
     }
