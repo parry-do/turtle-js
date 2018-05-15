@@ -178,7 +178,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         })()
       },
       write: function(text) {
-        if (!(typeof myVar === 'string' || myVar instanceof String)) {throw "Turtle only writes Strings!"}
+        if (!(typeof text === 'string' || text instanceof String)) {throw "Turtle only writes Strings!"}
         Smoothly.do(function() {
           paper.fillText(text, 0, 0)
         })()
