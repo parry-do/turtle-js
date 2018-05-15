@@ -102,6 +102,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         init()
       },
       fd: function(dist) {
+        if (isNaN(dist)) {throw "Turtle only moves by Numbers!"}
         Smoothly.step(dist, 5, function(step) {
           if (pendown) {
             paper.beginPath()
@@ -122,6 +123,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         this.rt(-angle)
       },
       rt: function(angle) {
+        if (isNaN(angle)) {throw "Turtle only rotates by Numbers!"}
         Smoothly.step(angle, 10, function(a) {
           clearTurtle()
           paper.rotate(a * Math.PI / 180)
@@ -175,7 +177,8 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
           setColor(color)
         })()
       },
-      text: function(text) {
+      write: function(text) {
+        if (!(typeof myVar === 'string' || myVar instanceof String)) {throw "Turtle only writes Strings!"}
         Smoothly.do(function() {
           paper.fillText(text, 0, 0)
         })()
