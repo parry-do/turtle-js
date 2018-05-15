@@ -43,4 +43,5 @@ Optionally also start the mongo db
 # Credits
 
 Branched from original at github.com/raimohanska/turtle-js
+
 See origins of the cursor images from src/main/webapp/images/image-sources.txt
