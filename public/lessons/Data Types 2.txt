@@ -1,3 +1,3 @@
-fd(50 + 50) // Computers let you do math with numbers
+fd(20 + 20) // Computers let you do math with numbers
 rt(90) // 90 is used to represent degrees to turn to the right, but it’s still a number
-fd(10 * 10) // * means multiplication
+fd(5 * 5) // * means multiplication
