@@ -18,6 +18,10 @@ define([], function() {
       },
       export: function() {
         return JSON.stringify(calls)
+      },
+      _reset: function() {
+        calls = []
+        api.reset()
       }
     }
     return recorder

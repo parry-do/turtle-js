@@ -46,7 +46,7 @@ require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "edito
   TurtleBundle(jsEnv, turtle, repl, editor)
 
   turtle.spin(360, 10)
-  Cookbook(editor, repl)
+  Cookbook(editor, repl, turtle)
   Sharing(editor.code)
 
   storage.openResult.onValue(function(turtle) {
@@ -61,11 +61,13 @@ require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "edito
   
   element.find(".turtlegraphics").clickE().onValue(takeFocus)
 
-  element.find(".editor-link").asEventStream("click").onValue(function() {
+  toggle = function() {
     element.toggleClass("editor-mode")
     takeFocus()
     editor.refresh()
-  })
+  }
+  toggle()
+  element.find(".editor-link").asEventStream("click").onValue(toggle)
 
   $(window).resize(function() {
     turtle.resize(width(), height())

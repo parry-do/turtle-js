@@ -40,6 +40,9 @@ define(["bacon.jquery", "parsestack"], function(bjq, parseStack) {
       },
       reset: function() {
         codeMirror.setValue("")
+      },
+      setValue: function(value) {
+        codeMirror.setValue(value)
       }
     }
 
