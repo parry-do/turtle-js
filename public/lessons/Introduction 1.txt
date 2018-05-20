@@ -10,4 +10,7 @@ fd(20)
 fd(20)
 // Change the ‘20’ above to another number and press ‘run’ again
 // Click ‘Lessons’ to go to the next example
+<<<<<<< HEAD
+>>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
+=======
 >>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414

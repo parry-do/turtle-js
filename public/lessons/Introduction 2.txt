@@ -19,4 +19,7 @@ rt(90)
 // Press run twice to draw a square.
 // Remove the ‘//’ from the fourth line above. The clear() command resets the Turtle.
 // Now the Turtle will draw a line, turn, be reset, draw a line and turn right. Press run twice.
+<<<<<<< HEAD
+>>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
+=======
 >>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
