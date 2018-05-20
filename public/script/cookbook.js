@@ -4,12 +4,14 @@
 var files = ["Introduction 1",
              "Introduction 2",
              "Data Types 1", 
-             "Data Types 2"]
+             "Data Types 2",
+             "Data Types 3",]
 
 define(["text!./../lessons/Introduction 1.txt", 
         "text!./../lessons/Introduction 2.txt",
         "text!./../lessons/Data Types 1.txt",
-        "text!./../lessons/Data Types 2.txt",], function() {
+        "text!./../lessons/Data Types 2.txt",
+        "text!./../lessons/Data Types 3.txt",], function() {
   
   var lessons = files.map((e, i) => [e, arguments[i]]);
   

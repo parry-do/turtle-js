@@ -40,8 +40,8 @@ require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "edito
   var element = $("#turtle-roy")
   var jsEnv = JsEnv()
   var repl = JsRepl.init(element.find(".console"), jsEnv)
-  var turtle = Turtle(element.find(".turtlegraphics"), width(), height())
   var editor = Editor(element, jsEnv, repl)
+  var turtle = Turtle(element.find(".turtlegraphics"), width(), height(), editor)
 
   TurtleBundle(jsEnv, turtle, repl, editor)
 

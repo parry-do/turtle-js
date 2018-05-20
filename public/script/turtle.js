@@ -1,6 +1,6 @@
 "use strict";
 define(["smoothly", "recorder"], function(Smoothly, Recorder) {
-  var Turtle = function(element, w, h) {
+  var Turtle = function(element, w, h, editor) {
     function xCenter() { return w / 2 }
     function yCenter() { return h / 2 }
     function setSize(width, height) {
@@ -102,18 +102,22 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         init()
       },
       fd: function(dist) {
-        Smoothly.step(dist, 5, function(step) {
-          if (pendown) {
-            paper.beginPath()
-            paper.moveTo(0, 0)
-            paper.lineTo(0, -step)
-            paper.stroke()
-          }
-          clearTurtle()
-          paper.translate(0, -step)
-          turtle.translate(0, -step)
-          drawTurtle()
-        })
+        if (typeof dist !== "number") {
+          editor.error("Turtle only moves by Numbers!")
+        } else {
+          Smoothly.step(dist, 5, function(step) {
+            if (pendown) {
+              paper.beginPath()
+              paper.moveTo(0, 0)
+              paper.lineTo(0, -step)
+              paper.stroke()
+            }
+            clearTurtle()
+            paper.translate(0, -step)
+            turtle.translate(0, -step)
+            drawTurtle()
+          })
+        }
       },
       bk: function(dist) {
         return api.fd(-dist)
@@ -122,12 +126,16 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         this.rt(-angle)
       },
       rt: function(angle) {
-        Smoothly.step(angle, 10, function(a) {
-          clearTurtle()
-          paper.rotate(a * Math.PI / 180)
-          turtle.rotate(a * Math.PI / 180)
-          drawTurtle()
-        })
+        if (typeof angle !== "number") {
+          editor.error("Turtle only rotates by Numbers!")
+        } else {
+          Smoothly.step(angle, 10, function(a) {
+            clearTurtle()
+            paper.rotate(a * Math.PI / 180)
+            turtle.rotate(a * Math.PI / 180)
+            drawTurtle()
+          })
+        }
       },
       pendown: Smoothly.do(function() {
         pendown = true
@@ -175,10 +183,14 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
           setColor(color)
         })()
       },
-      text: function(text) {
-        Smoothly.do(function() {
-          paper.fillText(text, 0, 0)
-        })()
+      write: function(text) {
+        if (!(typeof text === 'string' || text instanceof String)) {
+          editor.error("Turtle only writes Strings!")
+        } else {
+          Smoothly.do(function() {
+            paper.fillText(text, 0, 0)
+          })()
+        }
       },
       font: function(font) {
         if (typeof font == "number") {

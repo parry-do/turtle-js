@@ -43,6 +43,9 @@ define(["bacon.jquery", "parsestack"], function(bjq, parseStack) {
       },
       setValue: function(value) {
         codeMirror.setValue(value)
+      },
+      error: function(message) {
+        showErrorText("Error" + message)
       }
     }
 
