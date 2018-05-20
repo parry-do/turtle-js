@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 fd(20 + 20) // Computers let you do math with numbers.
 rt(90) // 90 is represents degrees to turn to the right, but it’s still a number.
 fd(5 * 5) // * means multiplication
-=======
-fd(20 + 20) // Computers let you do math with numbers
-rt(90) // 90 is used to represent degrees to turn to the right, but it’s still a number
-fd(5 * 5) // * means multiplication
->>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
-=======
-fd(20 + 20) // Computers let you do math with numbers
-rt(90) // 90 is used to represent degrees to turn to the right, but it’s still a number
-fd(5 * 5) // * means multiplication
->>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414

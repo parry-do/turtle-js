@@ -1,4 +1,4 @@
-// Everything in computers is data, 1s and 0s,
+// Everything in computers is data made up of 1s and 0s,
 // The most basic type of data is a Boolean: either true or false
 fd(20)
 pen(false) // Giving the Boolean value ‘false’ with pen() turns turtle’s pen off

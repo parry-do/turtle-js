@@ -1,6 +1,6 @@
 // Computers represent language as strings of letters, spaces, and punctuation.
 // These Strings are surrounded by quotation marks, "like this".
 clear() // Clears anything drawn by turtle
-write("Change this String")
+write("Change this String") // The turtle will write the provided string
 // Change the String above, maybe your name?
 // Turtle writes that String when run is clicked.

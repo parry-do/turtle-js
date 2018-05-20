@@ -1,16 +1,5 @@
-<<<<<<< HEAD
 // Everything after ‘//’, like this line, is a “comment" ignored by the computer.
 // The triangle above is the Turtle. The next line makes it go forward by 20 when you press ‘run’. Click run.
 fd(20)
 // Change the ‘20’ above to another number and click ‘run’ again.
-// Click ‘Lessons’ to go to the next example.
-=======
-// A line that starts with ‘//’ is a “comment", ignored by the computer.
-// The triangle above is the Turtle. The next line makes it go forward by 20 when you press ‘run’. Press run now.
-fd(20)
-// Change the ‘20’ above to another number and press ‘run’ again
-// Click ‘Lessons’ to go to the next example
-<<<<<<< HEAD
->>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
-=======
->>>>>>> 34183b0d4ed671c54eb767bd4fdfa86bf62d9414
+// Click ‘Lessons’ to go pick the next lesson.
