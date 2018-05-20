@@ -1,0 +1,6 @@
+// Computers represent language as strings of letters, spaces, and punctuation.
+// These Strings are surrounded by quotation marks, "like this".
+clone() // Clears anything drawn by turtle
+text("Change this String")
+// Change the String above, maybe your name?
+// Turtle writes that String when run is clicked.
