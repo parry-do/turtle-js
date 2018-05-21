@@ -18,7 +18,7 @@ define(["bacon.jquery", "parsestack"], function(bjq, parseStack) {
       .toProperty(codeMirror.getValue())
 
     repl.history.onValue(function(line) {
-      codeMirror.setValue(codeMirror.getValue() ? codeMirror.getValue() + "\n" + line : line)
+      //codeMirror.setValue(codeMirror.getValue() ? codeMirror.getValue() + "\n" + line : line)
     })
 
     root.find(".run-link").asEventStream("click").merge(runBus).map(code).onValue(function(program) {
