@@ -11,7 +11,7 @@ module.exports = (grunt) ->
           baseUrl: webDir + "/script",
           mainConfigFile: webDir + "/script/main.js",
           name: "main",
-          out: outDir + "/turtleroy.js",
+          out: outDir + "/turtle.js",
           optimize: "none"
         }
       }
