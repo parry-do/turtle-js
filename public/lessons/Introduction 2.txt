@@ -5,6 +5,5 @@ rt(90)
 // clear() // <= Remove '//' at the start of this line
 fd(20)
 rt(90)
-// Remove the ‘//’ from the fifth line above.
-// The clear() command clears all drawings.
+// Remove the ‘//’ from the fifth line above. clear() clears all drawings
 // Now the Turtle will draw a line, turn, clear its drawings, draw a line and turn right. Click run twice.

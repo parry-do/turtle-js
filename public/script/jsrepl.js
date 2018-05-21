@@ -1,6 +1,6 @@
 "use strict";
 define(["bacon","jq-console"], function(Bacon) {
-  var welcomeMessage = "Welcome to Code180's workshop.\nClick 'lessons' below to begin.\n"
+  var welcomeMessage = "Welcome to Code180's turtle trainer.\nClick 'lessons' below to begin.\n"
   var promptLabel = '> '
   function fmt(value, className) {
     return {msg: value, className: "jqconsole-" + className};

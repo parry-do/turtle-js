@@ -23,6 +23,7 @@ require.config({
       deps: ["jquery"]
     }
   },
+
   waitSeconds: 60
 })
 require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "editor", "commands", "cookbook", "storage", "sharing", "cheatsheet", "help"], 
@@ -68,6 +69,8 @@ require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "edito
   }
   toggle()
   element.find(".editor-link").asEventStream("click").onValue(toggle)
+
+  editor.setValue("//Welcome to Code180's turtle trainer.\n//Click 'lessons' below to begin.\n")
 
   $(window).resize(function() {
     turtle.resize(width(), height())
