@@ -1,5 +1,5 @@
 "use strict";
-define(["lodash", "tco", "barrier", "piano", "commands", "speak"], function(_, tco, barrier, Piano, Commands, speak) {
+define(["lodash", "tco", "barrier", "piano", "commands", "speak"], function(_, tco, barrier, Piano, Commands) {
   // bundles together the scripts that are pre-loaded to turtle repl
   return function turtleBundle(jsEnv, turtle, repl, editor) {
     var globals = { repl: repl, turtle: turtle, tco: tco, Barrier: barrier, speak: speak }
